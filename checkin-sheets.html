@@ -184,7 +184,7 @@
                 sessionCode: sessionCode,
                 studentId: studentId,
                 studentName: studentName,
-                time: checkInTime.toLocaleTimeString('en-US', { hour12: false }),
+                time: checkInTime.toTimeString().split(' ')[0], // Just HH:MM:SS
                 status: status,
                 ipAddress: ipAddress
             };
